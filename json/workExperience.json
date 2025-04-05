@@ -1,0 +1,57 @@
+[
+    {
+        "num": "1",
+        "job-title": "Developer & UI/UX Designer",
+        "date": "08/2024 – Present",
+        "project-title": "SnackPak Website",
+        "ul-list": [
+            "Developed wireframes, low-fidelity, and high-fidelity prototypes for a food subscription website using Figma.",
+            "Wrote front-end code in HTML, CSS, and JavaScript.",
+            "Designed and planned back-end architecture for the website."
+        ]
+    },
+    {
+        "num": "2",
+        "job-title": "UI/UX Designer",
+        "date": "01/2024 – 05/2024",
+        "project-title": "Rummikub App",
+        "ul-list": [
+            "Created a comprehensive design system, ensuring visual consistency with typography, color schemes, and accessibility best practices.",
+            "Integrated accessibility features to support users with visual impairments."
+        ]
+    },
+    {
+        "num": "3",
+        "job-title": "Wix UI/UX Designer",
+        "date": "03/2025",
+        "project-title": "John Grouse Election Website",
+        "ul-list": [
+            "Documented and identified issues with the election website, focusing on contrast, navigation, comprehension, and overall accessibility.",
+            "Upgraded the website on Wix just one week before the election, improving usability and addressing critical user experience issues."
+        ]
+    },
+    {
+        "num": "4",
+        "job-title": "Figma UI/UX Designer",
+        "date": "05/2024 – 08/2024",
+        "project-title": "Nature Counter (CrowdDoing)",
+        "ul-list": [
+            "Created concept art, documented use cases, and updated wireframes and high-fidelity prototypes to align with user and stakeholder needs.",
+            "Collaborated with cross-functional teams to refine the user experience and maintain design consistency.",
+            "Conducted user testing and iterated on designs based on feedback to enhance usability and overall user experience."
+        ]
+    },
+    {
+        "num": "5",
+        "job-title": "Figma UI/UX Designer",
+        "date": "01/2024 – 08/2024",
+        "project-title": "PallatePals",
+        "ul-list": [
+            "Created a detailed design document that incorporated insights from previous apps, user experience studies, and potential use cases.",
+            "Collaborated with a team to create wireframes, low-fidelity, and high-fidelity prototypes for the app.",
+            "Design document available [here](https://docs.google.com/document/d/1CPwUMa47brkd5HPap-DCabbzqrKoPzstFZbqqmp6Aao/edit?usp=sharing)."
+        ]
+    }
+    
+    
+]

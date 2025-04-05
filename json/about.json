@@ -1,0 +1,28 @@
+[
+    {
+        "firstName": "Rachel",
+        "lastName": "Gopman",
+        "profileImg": "images/other/pixelSelfPortrait.png",
+        "jobName": "Frontend Developer",
+        "elevatorPitch": "Hello, I'm Rachel Gopman, a passionate and detail-oriented Digital Media Web Design major specializing in UI/UX design and front-end development. I thrive on creating intuitive and visually engaging digital experiences that prioritize user-centered design. I have hands-on experience with technologies such as HTML, CSS, JavaScript, React Native, and Figma. I aim to deliver seamless and accessible designs that balance functionality with aesthetic appeal. My goal is to bring innovative, user-friendly interfaces to life, and I'm excited to apply my skills in a dynamic and forward-thinking professional environment.",
+        "email": "rachel.gopman@gmail.com",
+        "socials": [
+            {
+                "icon": "x bxl-instagram social-logo",
+                "url": "https://www.instagram.com/idrawzen/",
+                "alt": "Instagram"
+            },
+            {
+                "icon": "bx bxl-linkedin-square social-logo",
+                "url": "https://www.linkedin.com/in/rachel-gopman",
+                "alt": "linkedIn"
+            },
+            {
+                "icon": "bx bxl-github social-logo",
+                "url": "https://github.com/lapizwaves",
+                "alt": "GitHub"
+            }
+            
+        ]
+    }
+]

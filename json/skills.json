@@ -1,0 +1,100 @@
+[
+    {
+        "type": "Programming",
+        "num": "1",
+        "skills_arr": [
+            {
+                "skill": "HTML/CSS"
+            },
+            {
+                "skill": "JavaScript"
+            },
+            {
+                "skill": "React Native"
+            },
+            {
+                "skill": "React Vite"
+            },
+            {
+                "skill": "Python"
+            },
+            {
+                "skill": "Php"
+            },
+            {
+                "skill": "MySQL"
+            },
+            {
+                "skill": "MongoDB"
+            }
+        ]
+    },
+    {
+        "type": "UI/UX Software",
+        "num": "2",
+        "skills_arr": [
+            {
+                "skill": "Miro"
+            },
+            {
+                "skill": "Figma"
+            },
+            {
+                "skill": "Blender Animation"
+            },
+            {
+                "skill": "Canva"
+            }
+        ]
+    },
+    {
+        "type": "Low/No Code Sites Experience",
+        "num": "3",
+        "skills_arr": [
+            {
+                "skill": "Wix"
+            },
+            {
+                "skill": "Wordpress"
+            },
+            {
+                "skill": "AirTable"
+            }
+        ]
+    },
+    {
+        "type": "Documentation",
+        "num": "4",
+        "skills_arr": [
+            {
+                "skill": "Orange"
+            },
+            {
+                "skill": "Helio"
+            },
+            {
+                "skill": "Word"
+            },
+            {
+                "skill": "PowerPoint"
+            },
+            {
+                "skill": "Excel"
+            },
+            {
+                "skill": "Google Docs"
+            },
+            {
+                "skill": "Google Slides"
+            },
+            {
+                "skill": "Google Sheets"
+            },
+            {
+                "skill": "Google Forms"
+            }
+            
+        ]
+    }
+    
+]

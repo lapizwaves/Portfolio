@@ -1,0 +1,19 @@
+[
+    {
+        "type": "imgAttributes",
+        "imgWidth": "50px",
+        "imgHeight": "auto",
+        "padding": "50px"
+    },
+    {
+        "type": "imgDiv",
+        "padding": "30px"
+    },
+    {
+        "type": "skillsDiv",
+        "padding": "50px"
+    },
+    {
+        
+    }
+]
