@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachel Gopman Portfolio Home Page</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const profile = {
+        firstName: "Rachel",
+        lastName: "Gopman",
+        profileImg: "images/other/pixelSelfPortrait.png",
+        jobName: "Frontend Developer",
+        elevatorPitch: "Hello, I'm Rachel Gopman, a passionate and detail-oriented Digital Media Web Design major specializing in UI/UX design and front-end development. I thrive on creating intuitive and visually engaging digital experiences that prioritize user-centered design. I have hands-on experience with technologies such as HTML, CSS, JavaScript, React Native, and Figma. I aim to deliver seamless and accessible designs that balance functionality with aesthetic appeal. My goal is to bring innovative, user-friendly interfaces to life, and I'm excited to apply my skills in a dynamic and forward-thinking professional environment.",
+        email: "rachel.gopman@gmail.com",
+        socials: [
+          {
+            icon: "bx bxl-instagram social-logo",
+            url: "https://www.instagram.com/idrawzen/",
+            alt: "Instagram"
+          },
+          {
+            icon: "bx bxl-linkedin-square social-logo",
+            url: "https://www.linkedin.com/in/rachel-gopman",
+            alt: "LinkedIn"
+          },
+          {
+            icon: "bx bxl-github social-logo",
+            url: "https://github.com/lapizwaves",
+            alt: "GitHub"
+          }
+        ]
+      };
+
+      // Create the introduction and job text
+      const homeIntroduction = document.getElementById("home-introduction");
+      const homeJob = document.getElementById("home-job");
+
+      // Set name and job details
+      const nameHeading = document.createElement("h1");
+      nameHeading.textContent = `My name is ${profile.firstName} ${profile.lastName}`;
+      homeIntroduction.appendChild(nameHeading);
+
+      const jobHeading = document.createElement("h2");
+      jobHeading.textContent = `I am a ${profile.jobName}`;
+      homeJob.appendChild(jobHeading);
+
+      // Social links
+      const socialContainer = document.querySelector(".social");
+      profile.socials.forEach(social => {
+        const socialLink = document.createElement("a");
+        socialLink.href = social.url;
+        socialLink.target = "_blank";
+        const socialIcon = document.createElement("i");
+        socialIcon.className = social.icon;
+        socialLink.appendChild(socialIcon);
+        socialContainer.appendChild(socialLink);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo white-text" id="name-header">Rachel <span class="blue-text">Gopman</span></a>
+
+    <nav class="navbar">
+      <a href="#" class="active-navbar">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="home sections" id="home">
+    <div class="home-content">
+      <h3>Hello</h3>
+      <div class="home-introduction" id="home-introduction"></div>
+      <div class="home-job" id="home-job"></div>
+      <br />
+      <p>To learn more:</p>
+      <br /><br /><br />
+      <div class="btn-position">
+        <div class="btn-box">
+          <a href="/documents/Gopman_Rachel.docx" class="btn-1 white-text" download="Gopman_Rachel">Download Resumé</a>
+          <a href="/portfolio.html" class="btn-2">View Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <div class="socials-footer"></div>
+      <a href="https://www.instagram.com/idrawzen/" target="_blank"><i class='bx bxl-instagram social-logo'></i></a>
+      <a href="https://github.com/lapizwaves" target="_blank"><i class='bx bxl-github social-logo'></i></a>
+      <a href="https://www.linkedin.com/in/rachel-gopman" target="_blank"><i class='bx bxl-linkedin-square social-logo'></i></a>
+    </div>
+    <ul class="list">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+    <p class="copyright white-text">© 2025 Rachel Gopman | All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>

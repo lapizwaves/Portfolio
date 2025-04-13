@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rachel Gopman Portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo white-text" id="name-header">Rachel <span class="blue-text">Gopman</span></a>
+    <nav class="navbar navbar-portfolio">
+      <a href="home.html">Home</a>
+      <a href="#" class="active-navbar">Portfolio</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="portfolio sections" id="portfolio">
+    <h1 class="heading">Portfolio</h1>
+    <br>
+    <div id="galleryContainer"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="social">
+      <div class="socials-footer"></div>
+      <a href="https://www.instagram.com/idrawzen/" target="_blank"><i class='bx bxl-instagram social-logo'></i></a>
+      <a href="https://github.com/lapizwaves" target="_blank"><i class='bx bxl-github social-logo'></i></a>
+      <a href="https://www.linkedin.com/in/rachel-gopman" target="_blank"><i class='bx bxl-linkedin-square social-logo'></i></a>
+    </div>
+
+    <script>
+      const data = [
+        {
+          key: 1,
+          heading: "Notes App",
+          imgArr: [
+            "/images/notesApp/asset.jpg",
+            "/images/notesApp/assetPrototype.jpg",
+            "/images/notesApp/Figma.jpg",
+            "/images/notesApp/figmaPrototype.jpg"
+          ],
+          imgAlt: [
+            "Notes App assets",
+            "Notes App asset prototype",
+            "Notes App hi-fidelity",
+            "Notes App hi-fidelity prototype"
+          ],
+          caption: "A personal project focused on organizing tasks with an integrated calendar. The app features a simple, clean design that helps users stay on top of their schedules with reminders and task management features. Built using Figma for design and React Native for development, Apache was used as the server, and Visual Studio Code for coding.",
+          url: ""
+        },
+        {
+          key: 2,
+          heading: "Rummikub Website",
+          imgArr: [
+            "/images/rummikub/rummikubWireframe.jpg",
+            "/images/rummikub/rummikubAssets.jpg",
+            "/images/rummikub/rummikubFigma.jpg",
+            "/images/rummikub/hifiPrototype.jpg"
+          ],
+          imgAlt: [
+            "Rummikub wireframe",
+            "Rummikub assets",
+            "Rummikub hi-fidelity",
+            "Rummikub hi-fidelity prototype"
+          ],
+          caption: "A web-based platform for playing Rummikub online, designed with a strong focus on accessibility. This project includes a detailed design system to ensure inclusivity for users with visual impairments and easy navigation for all players. Developed using Figma for design",
+          url: ""
+        },
+        {
+          key: 3,
+          heading: "SnackPak Website",
+          imgArr: [
+            "images/sp/designPhase.jpg",
+            "/images/sp/spWireframe.jpg",
+            "/images/sp/spLo-fi.png",
+            "/images/sp/spAsset.jpg",
+            "/images/sp/spHi-fi.jpg",
+            "/images/sp/spHi-fiPrototype.jpg"
+          ],
+          imgAlt: [
+            "SnackPak design phase",
+            "SnackPak wireframe",
+            "SnackPak lo-fidelity",
+            "SnackPak assets",
+            "SnackPak hi-fidelity",
+            "SnackPak hi-fidelity prototype"
+          ],
+          caption: "A collaborative project for a snack subscription service, which curates international snacks to promote cultural awareness. The website includes a smooth user interface and an intuitive shopping experience, allowing users to explore and subscribe to monthly snack boxes. Created using Figma and Canva for design, HTML, CSS, JavaScript, React for development, and MySQL and PHP for back-end integration. Apache was used as the server, and Visual Studio Code was used for coding.",
+          url: ""
+        },
+        {
+          key: 4,
+          heading: "PalatePals App",
+          imgArr: [
+            "/images/ppApp/drawing.png",
+            "/images/ppApp/ppWireframe.png",
+            "/images/ppApp/ppWireframe2.png",
+            "/images/ppApp/ppWireframePrototype.png",
+            "/images/ppApp/v1.jpg",
+            "/images/ppApp/v3.jpg",
+            "/images/ppApp/v2.jpg"
+          ],
+          imgAlt: [
+            "PalatePals initial drawing",
+            "PalatePals wireframe",
+            "PalatePals WireframePrototype",
+            "PalatePals WireframePrototype 2",
+            "PalatePals version 1 (Warm Tones and Simple)",
+            "PalatePals version 2 (Dark Mode)",
+            "PalatePals version 3 (Colorful and Contrasting)"
+          ],
+          caption: "A group project for a snack subscription app aimed at broadening cultural awareness through curated snack boxes. The app features a dynamic, user-friendly design that allows users to explore snacks from around the world. The design evolved through multiple versions to ensure visual appeal and ease of use. Designed with Figma and Canva.",
+          url: ""
+        }
+      ];
+
+      const mainGalleryContainer = document.getElementById('galleryContainer');
+      if (!mainGalleryContainer) {
+        console.error('Main gallery container not found!');
+      } else {
+        data.forEach((gallery) => {
+          const galleryContainer = document.createElement('div');
+          galleryContainer.classList.add('gallery-container', `gallery-container${gallery.key}`);
+          galleryContainer.id = `gallery-container${gallery.key}`;
+
+          const heading = document.createElement('h2');
+          heading.textContent = gallery.heading;
+          galleryContainer.appendChild(heading);
+
+          const description = document.createElement('p');
+          description.textContent = gallery.caption;
+          galleryContainer.appendChild(description);
+
+          const imagesContainer = document.createElement('div');
+          imagesContainer.classList.add('imagesContainer');
+
+          const images = gallery.imgArr;
+          const altTexts = gallery.imgAlt;
+
+          let imageGroup = document.createElement('div');
+          imageGroup.classList.add('image-group');
+
+          images.forEach((imgSrc, imgIndex) => {
+            const img = document.createElement('img');
+            img.src = imgSrc;
+            img.alt = altTexts[imgIndex] || `Image ${imgIndex + 1}`;
+            img.classList.add('individualImgs');
+
+            img.onerror = () => {
+              img.src = '/images/placeholder.jpg';
+              img.alt = 'Image not available';
+            };
+
+            imageGroup.appendChild(img);
+
+            if ((imgIndex + 1) % 2 === 0) {
+              imagesContainer.appendChild(imageGroup);
+              imageGroup = document.createElement('div');
+              imageGroup.classList.add('image-group');
+            }
+          });
+
+          if (imageGroup.children.length > 0) {
+            imagesContainer.appendChild(imageGroup);
+          }
+
+          galleryContainer.appendChild(imagesContainer);
+          mainGalleryContainer.appendChild(galleryContainer);
+        });
+      }
+    </script>
+
+    <ul class="list">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+    <p class="copyright white-text">© 2025 <span>Rachel Gopman</span> | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
